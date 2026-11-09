@@ -1,0 +1,6 @@
+{
+  "name": "Merlin - The Electronic Wizard (1978)",
+  "description": "Authentic digital recreation of the iconic 1978 Parker Brothers handheld electronic game featuring all six classic games with retro LED matrix, tactile controls, and vintage sounds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

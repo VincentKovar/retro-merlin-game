@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@keyframes merlin-blink {
+  0%, 45% {
+    opacity: 1;
+    filter: brightness(1.2);
+  }
+  50%, 100% {
+    opacity: 0.15;
+    filter: brightness(0.4);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.15s ease-out forwards;
+}
+
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.3) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.02),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.02)
+  );
+  background-size: 100% 3px, 6px 100%;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #141417;
+}
+::-webkit-scrollbar-thumb {
+  background: #44444c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666672;
+}
